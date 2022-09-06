@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Color</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 80%;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            }
+        .circle{
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+            margin-top: 32px;
+        }
+        .red{
+            background-color: red;
+        }
+        .orange{
+            background-color: orange;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        .green{
+            background-color: green;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .indigo{
+            background-color: indigo;
+        }
+        .violet{
+            background-color: violet;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Rainbow Color</h1>
+        <div class="box">
+            <div class="circle red" onclick="changeColor('red')"></div>
+            <div class="circle orange" onclick="changeColor('orange')"></div>
+            <div class="circle yellow" onclick="changeColor('yellow')"></div>
+            <div class="circle green" onclick="changeColor('green')"></div>
+            <div class="circle blue" onclick="changeColor('blue')"></div>
+            <div class="circle indigo" onclick="changeColor('indigo')"></div>
+            <div class="circle violet" onclick="changeColor('violet')"></div>
+        </div>
+    </center>
+    <script>
+        function changeColor(color){
+            document.querySelector('body').style.backgroundColor=color;
+        }
+    </script>
+</body>
+</html>
